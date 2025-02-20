@@ -44,6 +44,7 @@ public class AuthController {
 
     @GetMapping("/users")
     public ResponseEntity<Iterable<Users>> getAllUsers() {
+
         return ResponseEntity.ok(userService.getAllUsers());
     }
 
